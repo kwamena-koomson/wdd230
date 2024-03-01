@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Kwamena Koomson - Portfolio - Web Development</title>
+  <meta name="description" content="Portfolio showcasing Kwamena Koomson's web development projects and skills.">
+  <meta name="author" content="Kwamena Koomson">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/larger.css">
+</head>
+
+<body>
+  <header>
+    <img src="images/kwamena.jpg" alt="Kwamena Koomson" width="100px" height="100px">
+    <span>Kwamena Koomson</span>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="#">Chamber</a></li>
+      <li><a href="#">Site Plan</a></li>
+      <li><a href="#">Form</a></li>
+    </ul>
+  </nav>
+
+
+  <main>
+    <h1>Web Development Portfolio</h1>
+    <div class="cardWrapper">
+      <section class="card">
+        <h2>Learning Activities</h2>
+        <ul>
+          <li>
+            <span>Week 01:</span>
+            <a href="/projects/project1/index.html">Layout</a>
+            <span>|</span>
+            <a href="/projects/project1/media-queries.html">Media Query</a>
+            <span>|</span>
+            <a href="https://codepen.io/Kwamena/pen/ABC123">JS Pen</a>
+          </li>
+          <li><span>Week 02: </span></li>
+          <li><span>Week 03: </span></li>
+          <li><span>Week 04: </span></li>
+          <li><span>Week 05: </span></li>
+          <li><span>Week 06: </span></li>
+        </ul>
+      </section>
+      <section class="card information">
+        <h2>Information</h2>
+        <ul>
+          <li>Location: Accra, Ghana</li>
+          <li>Weather: +15°C, Sunny</li>
+          <li>Page Visits: 105</li>
+        </ul>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <p>
+      <span>&copy;<span id="jsYear"></span></span>
+      <span>Kwamena Koomson</span>
+      <span>Accra, Ghana</span>
+    </p>
+    <p id="lastModified"></p>
+  </footer>
+  <script src="scripts/getDates.js" defer></script>
+</body>
+
+</html>
