@@ -1,64 +1,22 @@
-const apiKey = 'ebcbe247130222ab1957eddde562daa6';
-const latitude = 49.157940;
-const longitude = -121.951469;
+// Function to fetch weather data from the API
+function fetchWeatherData() {
+  const apiKey = 'ba56ade51dfd64213fbd29c60ff9a0ff';
+  const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Accra&appid=${apiKey}&units=metric`;
 
+  fetch(apiUrl)
+      .then(response => response.json())
+      .then(data => {
+          // Extract the required weather information
+          const temperature = data.main.temp;
+          const iconCode = data.weather[0].icon;
 
-function fetchChill(temp, speed) {
-  const f = 35.74 + 0.6215 * temp - 35.75 * speed ** 0.16 + 0.4275 * temp * speed ** 0.16
-  if (temp <= 50 && speed > 3) {
-    windchill = f.toFixed(1) + "°F";
-  } else {
-    windchill = "NA";
-  }
-
-  return windchill;
+          // Update the HTML elements with the retrieved information
+          document.getElementById('current-temp').textContent = temperature + "°C";
+          document.getElementById('weather-icon').setAttribute('src', `http://openweathermap.org/img/wn/${iconCode}.png`);
+          document.getElementById('weather-icon').setAttribute('alt', data.weather[0].description);
+      })
+      .catch(error => console.log('Error fetching weather data:', error));
 }
 
-
-function fetchWeatherData(city) {
-  const url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=imperial&appid=${apiKey}`;
-
-
-  fetch(url)
-    .then(response => response.json())
-    .then(data => {
-      displayWeatherData(data);
-    })
-    .catch(error => {
-      console.error('Issue:', error);
-    });
-}
-
-function displayWeatherData(data) {
-  const weatherInfoElement = document.getElementById('weather-info');
-
-  const cityName = data.name;
-  const temperatureFahrenheit = data.main.temp;
-  const weatherIcon = data.weather[0].icon;
-  const windspeed = data.wind.speed;
-  const description = data.weather[0].description;
-  //capitalize each description word
-  const words = description.split(" ");
-  const capitalizedWords = words.map(function (word) {
-    return word.charAt(0).toUpperCase() + word.slice(1);
-  });
-  const capitalizedDescription = capitalizedWords.join(" ");
-
-  fetchChill(temperatureFahrenheit, windspeed);
-
-  const htmlContent = `
-    <span class="weather-headline">${city} Weather</span>
-    <img class="weather-img" alt="Weather icon" src="https://openweathermap.org/img/wn/${weatherIcon}@2x.png">
-    <span class="weather-temp">${temperatureFahrenheit.toFixed(1)}°F</span>
-    <span class="weather-description">${capitalizedDescription}</span>
-    <hr class="weather-description">
-    <span class="weather-speed"><strong>Wind Speed:</strong> ${windspeed} mph</span>
-    <span class="weather-chill"><strong>Wind chill:</strong> ${windchill}
-    <p class="small">Courtesy of: <a class="small" href="https://OpenWeatherMap.org">OpenWeatherMap.org</a></p></span>
-  `;
-
-  weatherInfoElement.innerHTML = htmlContent;
-}
-
-const city = 'Chilliwack';
-fetchWeatherData(city);
+// Call the function to fetch weather data when the page loads
+window.addEventListener('load', fetchWeatherData);

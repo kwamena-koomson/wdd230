@@ -65,14 +65,13 @@
   header .today{
     grid-column: 1/4;
   }
-  /*Active Window*/
+  
   .active::before {
       content: "👀 ";
   }
   
   
   /* Dark Mode Toggle*/
-  /*Simple css to style it like a toggle switch*/
   .theme-switch-wrapper {
     display: flex;
     justify-content: flex-end;
@@ -132,7 +131,7 @@
     border-radius: 50%;
   }
   
-  /* Navigation  */
+  
   
   .navigation {
       list-style: none;
@@ -187,9 +186,7 @@
   .open li a {
       display: block;
   }
-  /*#logo_link img {
-    width: 100%;
-  }*/
+  
   
   
   .today {
@@ -202,9 +199,7 @@
     background-color: var(--color1);
     color: var(--font-color1);
   }
-  /*Menu End*/
   
-  /* Header End */
   
   main section {
     margin: 10px;
