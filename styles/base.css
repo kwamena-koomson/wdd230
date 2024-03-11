@@ -50,7 +50,25 @@ header > img {
     cursor: pointer;
     font-size: 2rem;
   }
+
+  #js-mobile-menu {
+    font-size: 2rem;
+    border: 0;
+    background: none;
+    color: #000;
+    position: absolute;
+    right: 20px;
+    top: -48px;
+    cursor: pointer;
+  }
   
+  #js-mobile-menu::before {
+    content: "☰";
+  }
+  
+  .js-mobile-open #js-mobile-menu::before {
+    content: "X";
+  }
 nav ul {
     background-color: black;
 }
