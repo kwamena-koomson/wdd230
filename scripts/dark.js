@@ -25,3 +25,17 @@ modeButton.addEventListener("click", () => {
         modeButton.textContent = "🌙";
     }
 });
+
+
+function toggleMobileMenu() {
+    const hamButton = document.querySelector('#js-mobile-menu');
+    const nav = hamButton.nextElementSibling;
+  
+    hamButton.addEventListener('click', () => {
+      nav.classList.toggle('js-mobile-open');
+    });
+  }
+  
+  // run section
+  toggleMobileMenu();
+  
