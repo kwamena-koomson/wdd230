@@ -69,6 +69,12 @@ header > img {
   .js-mobile-open #js-mobile-menu::before {
     content: "X";
   }
+
+  .js-mobile-open ul {
+    display: block;
+    height: auto;
+    transform: scaleY(1);
+  }
 nav ul {
     background-color: black;
 }
