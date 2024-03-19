@@ -38,6 +38,17 @@ header > span {
     font-weight: bold;
 }
 
+.herolabel {
+    background-color: #333333;
+    color: #fff;
+    font-size: 2rem;
+    width: fit-content;
+    border: 2px solid #fff;
+    position:relative;
+    bottom: 50px;
+    left: 5px;
+}
+
 header > img {
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
 }
