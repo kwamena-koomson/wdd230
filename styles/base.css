@@ -129,6 +129,9 @@ h1 {
     margin: 10px;
 }
 
+#google-map-iframe {
+    max-width: 100%;
+  }
 footer {
     margin-top: 40px;
     font-size: 18px;
