@@ -338,3 +338,175 @@
   #base p {
     margin: 2px;
   }
+
+  /* Discover page */
+  .bold {
+    font-weight: bold;
+}
+.discover main {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.discover .sidebar {
+  max-width: 400px;
+  padding-bottom: 40px;
+}
+
+.demographics,
+.facts,
+.visits {
+  border: 1px solid black;
+  padding: 20px;
+}
+
+.demographics h2,
+.facts h2,
+.visits h2 {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.discover section + section {
+  margin-top: 10px;
+}
+
+.facts li {
+  margin-bottom: 8px;
+}
+
+/* CALENDAR STYLE START */
+
+.calendar-wrapper {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.calendar-container {
+  background: #ffffffb3;
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.calendar-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 20px 5px;
+  justify-content: space-between;
+}
+
+.calendar-header .calendar-navigation {
+  display: flex;
+}
+
+.calendar-header .calendar-navigation span {
+  height: 18px;
+  width: 18px;
+  margin: 0 1px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 18px;
+  border-radius: 50%;
+  user-select: none;
+  color: #aeabab;
+  font-size: 1.5rem;
+}
+
+.calendar-navigation span:last-child {
+  margin-right: -10px;
+}
+
+.calendar header .calendar-navigation span:hover {
+  background: #f2f2f2;
+}
+
+.calendar-header .calendar-current-date {
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.calendar-body {
+  padding: 10px;
+}
+
+.calendar-body ul {
+  list-style: none;
+  flex-wrap: wrap;
+  display: flex;
+  text-align: center;
+}
+
+.calendar-body .calendar-dates {
+  margin-bottom: 10px;
+}
+
+.calendar-body li {
+  width: calc(100% / 7);
+  font-size: 0.75rem;
+  color: #414141;
+}
+
+.calendar-body .calendar-weekdays li {
+  cursor: default;
+  font-weight: 400;
+}
+
+.calendar-body .calendar-dates li {
+  margin-top: 20px;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.calendar-dates li.inactive {
+  color: #aaa;
+}
+
+.calendar-dates li.active {
+  color: #fff;
+}
+
+.calendar-dates li::before {
+  position: absolute;
+  content: "";
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.calendar-dates li.active::before {
+  background: #6332c5;
+}
+
+.calendar-dates li:not(.active):hover::before {
+  background: #e4e1e1;
+}
+
+.discover-figure {
+  margin-bottom: 30px;
+}
+
+.discover-figure figcaption {
+  padding: 15px 15px 20px;
+  text-align: center;
+}
+
+.discover-picture {
+  width: 400%;
+  height: auto;
+}
+
+.num-of-visits {
+  text-align:left;
+}
