@@ -43,3 +43,11 @@ The CSS class rules will handle the different views, layouts, and displays.
 🗝️ JavaScript only applies the class value or not.
 */
 
+// Hamburger Menu
+const hamButton = document.querySelector('#menu');
+const navigation = document.querySelector('.navigation');
+
+hamButton.addEventListener('click', () => {
+	navigation.classList.toggle('open');
+	hamButton.classList.toggle('open');
+});

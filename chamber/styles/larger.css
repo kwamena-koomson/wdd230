@@ -76,3 +76,16 @@
       grid-column: 4/5;
     }
   }
+
+  /* discover page */
+  .sidebar {
+    grid-column: 1 / 2;
+}
+
+.gallery {
+    grid-column: 2 / 4;
+}
+
+.gallery img:hover {
+    box-shadow: 0 0 50px #333;
+}

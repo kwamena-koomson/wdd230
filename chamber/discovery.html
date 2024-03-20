@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accra Chamber of Commerce</title>
+    <meta name="description" content="WDD 230 - Accra Chamber of Commerce Project">
+    <meta name="author" content="Kwamena Koomson">
+
+    <meta property="og:title" content="Accra Chamber of Commerce Home Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+      content="https://media.istockphoto.com/id/480217257/photo/nkrumah-memorial-park-accra-ghana.jpg?s=612x612&w=0&k=20&c=qK-M2FJI6FxmUQ9X1whiRiwXdcvtNzcu4jbgU_VRJI4=">
+    <meta property="og:url" content="https://kwamena-koomson.github.io/wdd230/chamber/index.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gabarito:wght@500&family=Roboto:ital,wght@0,400;1,300&display=swap"
+      rel="stylesheet">
+
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+  </head>
+
+  <body>
+    <header>
+      <a id="logo_link" href="index.html"><img src="images/accra.jpg"
+          alt="Accra Chamber of Commerce Logo" title="Accra Chamber of Commerce"></a>
+      <h1>Accra Chamber of Commerce</h1>
+      <div class="theme-switch-wrapper">
+        <em>Enable Dark Mode!</em>
+        <label class="theme-switch" for="checkbox">
+          <input type="checkbox" id="checkbox">
+          <span class="slider round"></span>
+        </label>
+      </div>
+      <nav>
+        <button id="menu" title="Menu"></button>
+        <ul class="navigation">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="discover.html">Discover</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="join.html">Join</a></li>
+        </ul>
+      </nav>
+      <div class="today"> <span id="date"></span></div>
+    </header>
+    <main>
+        <div class="sidebar">
+            <section class="sidebar__content">
+                <h3>Latest Visit</h3>
+                <p id="latestVisit"></p>
+            </section>
+            <section class="sidebar__content">
+                <h3>Accra Facts</h3>
+                <p>Accra is the second largest city in Ghana with a population of about five million four hundred and fifty five thousand people</p>
+            </section>
+            <section class="sidebar__content">
+                <h3>Accra</h3>
+                <picture>
+                    <source srcset="images/store-content.webp" media="(max-width: 400px)">
+                    <source srcset="images/store-content.webp" media="(max-width: 960px)">
+                    <img src="images/things.webp" alt="table setting" loading="lazy" width="1100" height="750">
+                </picture>
+                <p>Accra, Ghana's Capital, is often dubbed the "Gateway to West Africa" due to its vibrant culture, rich history, and bustling streets.</p>
+            </section>
+            <section class="sidebar__content">
+                <form> <input type="date" id="fecha" name="fecha" required="required"> </form>
+            </section>
+        </div>
+        <div class="gallery">
+            <picture>
+                <source srcset="images/store-1-large.webp" media="(max-width: 400px)">
+                <source srcset="images/store-1-large.webp" media="(max-width: 960px)">
+                <img src="images/blackstar.webp"  alt="store-1" loading="lazy" width="1100" height="750">
+            </picture>
+            <picture>
+                <source srcset="images/store-2-large.webp" media="(max-width: 400px)">
+                <source srcset="images/store-2-large.webp" media="(max-width: 960px)">
+                <img src="images/kwamenkrumah.webp" alt="store-2" loading="lazy" width="1100" height="750">
+            </picture>
+            <picture>
+                <source srcset="images/store-3-large.webp" media="(max-width: 400px)">
+                <source srcset="images/store-3-large.webp" media="(max-width: 960px)">
+                <img src="images/labadi.webp" alt="store-3" loading="lazy" width="1100" height="750">
+            </picture>
+            <picture>
+                <source srcset="images/store-4-large.webp" media="(max-width: 400px)">
+                <source srcset="images/store-4-large.webp" media="(max-width: 960px)">
+                <img src="images/makola.webp" alt="store-4" loading="lazy" width="1100" height="750">
+            </picture>
+            <picture>
+                <source srcset="images/store-5-large.webp" media="(max-width: 400px)">
+                <source srcset="images/store-5-large.webp" media="(max-width: 960px)">
+                <img src="images/dubois.webp" alt="store-5" loading="lazy" width="1100" height="750">
+            </picture>
+            <picture>
+                <source srcset="images/store-6-large.webp" media="(max-width: 400px)">
+                <source srcset="images/store-6-large.webp" media="(max-width: 960px)">
+                <img src="images/jamestown.webp" alt="store-6" loading="lazy" width="1100" height="750">
+            </picture>
+        </div>
+    </main>
+    <footer>
+        <div id="subBase">
+          <img src="images/accra2.jpg" title="Accra Chamber of Commerce">
+          <div id="address">
+            <p>Accra Chamber of Commerce</p>
+            <p>57 Independence Avenue</p>
+            <p>Accra, North Ridge</p>
+          </div>
+          <div id="contact">
+            <p>Email: info@accracommerce.com</p>
+            <p>Phone: (233)55-430-8517</p>
+            <a target="_blank" href="https://maps.app.goo.gl/1F5QMVppm4auoGaC9">📌 Location Map</a>
+          </div>
+        </div>
+        <div id="base">
+          <p>&copy; <span id="year"></span> Accra Chamber of Commerce </p>
+          <p>Kwamena Koomson</p>
+          <p>WDD230 Project</p>
+          <p id="updated">Last Updated: <span id="date1"></span></p>
+        </div>
+      </footer>
+      <script src="scripts/getdates.js"></script>
+      <script src="scripts/weather.js"></script>
+      <script src="scripts/discover.js"></script>
+  </body>
+
+</html>
