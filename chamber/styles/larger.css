@@ -89,3 +89,47 @@
 .gallery img:hover {
     box-shadow: 0 0 50px #333;
 }
+/* directory page */
+.buttons {
+  text-align: center;
+  grid-column: 1 / 3;
+}
+
+.cards {
+  grid-column: 1 / 4;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.cards section {
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem;
+  border: 1px solid #7067cf;
+}
+
+.cards section p {
+  margin: 0;
+}
+
+.simple {
+  display: none;
+  margin: 0;
+  padding: 1rem;
+  border: 0px;
+  grid-column: 1 / 4;
+}
+
+.simple tbody tr {
+  height: 0;
+}
+
+.simple tbody tr:nth-child(odd) {
+  margin: 0;
+  padding: 0;
+  background-color: rgba(112, 103, 207, 0.3);
+}
+
+.simple tbody tr td {
+  text-align: left;
+}
