@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     let isGridView = true;
 
-    const membersData = fetch('https://Kwamena-koomson.github.io/wdd230/chamber/data/members.json')
+    const membersData = fetch('https://guidarmike.github.io/wdd230/chamber/data/members.json')
         .then(response => response.json())
         .then(data => {
             displayMembers(data.members);
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 <img src="images/${member.image}" alt="${member.name}">
                 <p>Address: ${member.address}</p>
                 <p>Phone: ${member.phone}</p>
-                <p>Website: <a href="${member.website}" target="_blank">${member.website}</a></p>
+                <p>Website: <a href="${member.websiteURL}" target="_blank">${member.websiteURL}</a></p>
                 <p>Membership Level: ${member.membership_level}</p>
                 <p>${member.other_info}</p>
             `;
