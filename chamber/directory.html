@@ -2,149 +2,81 @@
 <html lang="en">
 
 <head>
-    <!--Meta tags-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="The City of Winter Garden Chamber of Commerce Mockup">
-    <meta name="author" content="Mae Brown">
-    <meta property="og:title" content="The City of Winter Garden Chamber of Commerce Mockup">
+    <title>Directory Members - Accra Chamber of Commerce</title>
+    <meta name="description"
+        content="WDD 230 - Web Frontend Development, Kwamena Koomson, This page purpose is to be the directory page">
+    <meta name="author" content="Kwamena Koomson">
+
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Alice&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/largers.css">
+    <link rel="stylesheet" href="styles/bases.css">
+    <link rel="stylesheet" href="styles/mediums.css">
+
+    <link rel="icon" href="images/favicon.ico">
+    <meta property="og:title" content="WDD230 - Chamber Of Commerce Page by Kwamena Koomson">
     <meta property="og:type" content="website">
-    <meta property="og:image"
-        content="https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,f_avif,h_500,q_55,w_1024/v1/clients/visitflorida/69_DJI_0105_af7ea820-3e80-445a-8c02-acb1090a759b.png">
-    <meta property="og:url" content="/">
-
-    <!--Links-->
-    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-    <link rel="stylesheet" href="styles/normal.css">
-    <link rel="stylesheet" href="styles/bas.css">
-    <link rel="stylesheet" href="styles/larg.css">
-    <link rel="stylesheet" href="styles/form-base.css">
-    <link rel="stylesheet" href="styles/form-larg.css">
-
-    <!--Title-->
-    <title>The City of Winter Garden Chamber of Commerce Mockup</title>
+    <meta property="og:url" content="https://kwamena-koomson.github.io/wdd230/">
+    <meta property="og:image" content="https://live.staticflickr.com/2386/2125058758_6ea8b02686_c.jpg">
 </head>
 
 <body>
-    <!-- Header section -->
-    <header class="l-header">
-        <div class="logo">
-            <img src="./assets/images/wgcc-logo3.webp" alt="profile image">
+
+    <header class="header-container">
+        <img src="images/accra.jpg" class="main-image" alt="Sabina Chamber of Commerce Logo Image">
+        <h1>Accra Chamber of Commerce</h1>
+
+        <div id="mode">
+            💡/🕶️
         </div>
+
+        <section class="header-buttons">
+            <a href="join.html" class="join-link" id="log-in">Log In</a>
+            <a href="join.html" class="join-link" id="sign-up">Sign Up</a>
+
+            <div id="hamburger">&#8801;</div>
+        </section>
     </header>
 
-    <!-- Navigation section -->
     <nav>
-        <button id="ham-menu"></button>
-        <ul id="menu" class="navigation">
-            <li>
-                <a href="./index.html">HOME</a>
-            </li>
-            <li>
-                <a href="./discover.html">DISCOVER</a>
-            </li>
-            <li>
-                <a href="./directory.html" class="active">DIRECTORY</a>
-            </li>
-            <li>
-                <a href="./join.html">JOIN US</a>
-            </li>
-            <li>
-                <a href="#reach-out">CONTACT</a>
-            </li>
+        <ul class="show-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="directory.html">Membership</a></li>
+            <li><a href="discover.html">Discover</a></li>
         </ul>
     </nav>
 
-    <!-- Main section -->
-
-    <section class="join-grid">
-        <div class="join-about">
-            <h1>
-                The City of Winter Garden <br>
-                ~ Chamber of Commerce ~ <br>
-                Members Directory
-            </h1>
-
-            <hr>
-            <hr>
-
-            <div class="menu">
-                <button id="grid">⏹️Grid</button>
-                <button id="list">📄List</button>
-            </div>
-        </div>
-    </section>
-
     <main>
-        <div id="cards"></div>
+
+        <div class="discovery-container">
+            <div class="toggle-view">
+                <button class="grid-view" id="grid-view">Grid View</button>
+                <button class="list-view" id="list-view">List View</button>
+            </div>
+            <div class="members" id="members-list"></div>
+        </div>
+
     </main>
 
-    <!-- "reach out" section -->
-    <section id="reach-out" class="contact">
-        <div class="flex-row">
-            <h2 class="section-title secondary-border">REACH OUT</h2>
-        </div>
-        <div class="contact-info">
-            <div>
-                <p>
-                    Any questions about the <br>
-                    City of Winter Garden Chamber of Commerce?
-                    <br />
-                    Let us know and we'll be happy to talk to you!
-                </p>
-                <address>
-                    300 W Plant St, <br />
-                    Winter Garden, FL <br />
-                    34787<br />
-                    P: 555.WIN.TERG (555.786.2839)<br />
-                    E: <a href="mailto:info@runbuddy.io">info@cwcc.org</a>
-                </address>
-            </div>
-            <div class="contact-form">
-                <h3>Contact Us</h3>
-                <form>
-                    <label for="contact-name">Your Name</label>
-                    <input type="text" id="contact-name" placeholder="Your Name" />
-
-                    <label for="contact-message">Message</label>
-                    <textarea id="contact-message" placeholder="Message"></textarea>
-
-                    <button type="submit">Send</button>
-                </form>
-            </div>
-            <iframe title="downtownMap"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.1664496743742!2d-81.59208992450168!3d28.564764075701763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e7836e6a0b2545%3A0x803e56e36a661c5f!2sCity%20of%20Winter%20Garden!5e0!3m2!1sen!2sus!4v1699945131785!5m2!1sen!2sus"
-                style="border:0;" allowfullscreen="" loading="lazy">
-            </iframe>
-        </div>
-    </section>
-    <!-- footer -->
     <footer>
         <p>
-            <a href="./index.html">HOME</a> | <a href="./discover.html">DISCOVER</a> | <a
-                href="./directory.html">DIRECTORY</a> | <a href="./join.html">JOIN</a> | <a href="#contact">CONTACT</a>
+            Phone:(233)55-430-8517 <br>
+            Email:info@accracommerce.com
         </p>
-        <p>&copy; <span id="year"></span> |The City of Winter Garden Chamber of Commerce</p>
+        <p>
+            &copy; <span id="currentYear"></span> <br>
+            Kwamena Koomson <br>
+            Project for WDD230
+        </p>
         <p id="lastModified"></p>
-        <div class="num-of-visits">
-            <p><span class="label">Number of Page Visits:</span><span class="visits"></span></p>
-        </div>
-        <div id="timestamp"></div>
-
     </footer>
 
-    <!--Script File Link-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
-
-    <script src="scripts/hamburger.js"></script>
-    <script src="scripts/getDates.js"></script>
-    <script src="scripts/numOfVisits.js"></script>
-    <script src="scripts/timestamp.js"></script>
-    <script src="scripts/members.js"></script>
-    <script src="scripts/grid.js"></script>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/hamburgermenu.js"></script>
+    <script src="scripts/darkmode.js"></script>
+    <script src="scripts/directory.js"></script>
 
 </body>
 
