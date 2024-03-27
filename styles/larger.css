@@ -1,23 +1,42 @@
-@media screen and (min-width: 700px) {
-    header span {
-      font-size: 32px;
-    }
+@media only screen and (min-width : 480px) {
+  header, nav, main, footer {
+      max-width: 992px;
+  }
   
-    nav ul {
-      display: flex;
-    }
-  
-    nav ul li {
-      flex: 1 1 100%;
-    }
-  
-    main {
-      max-width: 1200px;
-    }
-  
-    .cardWrapper {
+  #menu {
+      display: none;
+  }
+
+  nav ul {
+  display: flex;
+}
+
+  nav ul li {
+      display: block;
+  flex: 1 1 100%;
+}
+
+  main {
       display: grid;
       grid-template-columns: 2fr 1fr;
-      gap: 1rem;
-    }
   }
+
+  .hero {
+      grid-column: 1 / 4;
+  }
+
+  .herolabel {
+      font-size: large;
+      top: 30px;
+      right: 30px;
+      padding: 1.5rem;
+  }
+
+  h1 {
+      grid-column: 1 / 4;
+  }
+
+  iframe {
+      grid-column: 1 / 4;
+  }
+}

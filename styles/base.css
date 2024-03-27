@@ -1,144 +1,157 @@
-:root {
-    --primary-color: rgb(0, 110, 182);
-    --main-padding: 40px;
-}
-
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
-}
-
-html, body {
-    min-height: 100vh;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
-    display: grid;
-    grid-template-rows: auto auto 1fr auto;
-}
-
-ul {
-    list-style: none;
+    font-family: 'Palanquin', sans-serif;
+    max-width: 1080px;
+    margin: auto;
 }
 
 header {
-    background-color: var(--primary-color);
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    background-color:rgb(80, 191, 255);
+    padding: 1rem;
+    position: relative;
 }
 
-header > span {
-    padding-left: 20px;
-    font-size: 24px;
-    color: white;
-    font-weight: bold;
-}
-
-.herolabel {
-    background-color: #333333;
-    color: #fff;
-    font-size: 2rem;
-    width: fit-content;
-    border: 2px solid #fff;
-    position:relative;
-    bottom: 50px;
-    left: 15px;
-}
-
-header > img {
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
-}
-
-#mode {
+#darkBtn {
     position: absolute;
     top: 1rem;
     right: 1rem;
-    font-size: 3rem;
+    width: 24px;
     cursor: pointer;
-    font-size: 2rem;
-  }
 
+}
+
+header span {
+    padding-left: 1rem;
+    font-size: 2rem;
+}
+
+#menu {
+	font-size: 1.5rem;
+	border: 1px solid rgba(0,0,0,.3);
+	padding: 3px 7px 6px;
+	background-color: #eee;
+	color: #000;
+    position: relative;
+    top: 2rem;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "X";
+}
+
+nav {
+	background-color: #36454f;
+}
 
 nav ul {
-    background-color: black;
+	list-style-type: none;
+    padding-left: 0px;
+}
+
+nav ul li {
+    display: none;
+	list-style-type: none;
+    padding-left: 0px;
 }
 
 nav a {
-    display: block;
-    text-align: center;
-    padding: 15px;
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 1rem;
+	text-decoration: none;
 }
 
-nav a.active,
 nav a:hover {
-    background-color: rgba(255, 255, 255, 0.4);
+    color: #000;
+	background-color: blanchedalmond;
 }
 
-main {
-    padding: 0 var(--main-padding);
+.open li {
+	display: block;
+	width: 100%;
+}
+.open li a {
+	display: block;
+}
+
+.active {
+	color: yellow;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
     width: 100%;
-    max-width: 500px;
-    margin: 0 auto;
+    height: auto;
+}
+
+.herolabel {
+	position: absolute;
+    font-size: x-small;
+    top: 1rem;
+    right: 1rem;
+	background: radial-gradient(#fff, #4D5B97);
+	border: 1px solid rgba(0,0,0,.75);
+    padding: 0.5rem;
+	box-shadow: 0 0 3rem #fff;
+	opacity: 0.75;
 }
 
 h1 {
-    font-size: 22px;
-    text-align: center;
-    margin: 30px 0 20px;
-    border-bottom: 1px solid black;
+    margin: 1rem;
+    border-bottom: 1px solid;
 }
 
 .card {
-    margin-top: 15px;
-    border: 1px solid black;
+    text-align: center;
+    margin: 1rem;
     border-radius: 5px;
+    border: 1px solid #bdbdbd;
 }
 
 .card h2 {
-    background-color: var(--primary-color);
-    color: white;
+    margin: 0%;
+    padding: 1rem 0%;
     text-align: center;
-    padding: 12px;
+    background-color: rgb(80, 191, 255);
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
 }
 
-.card ul {
-    padding: 15px;
-}
-
-.card.information li {
-    text-align: center;
-    margin: 10px;
-}
-
-#google-map-iframe {
-    max-width: 100%;
-  }
-footer {
-    margin-top: 40px;
-    font-size: 18px;
-    background-color: var(--primary-color);
-    color: white;
-    padding: 20px;
-}
-
-footer p {
-    text-align: center;
-}
-
-footer p:first-child > span {
-    display: block;
+.card ul li {
+    text-align: left;
+    list-style-type: none;
     padding: 5px;
 }
 
-#lastModified {
-    margin-top: 10px;
-    color: yellow;
-    font-size: 14px;
+iframe {
+    width: 100%;
+}
+
+figure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2.5rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color:rgb(80, 191, 255);
 }

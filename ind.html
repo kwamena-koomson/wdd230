@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kwamena Koomson - WDD 230 - Web Frontend Development</title>
     <meta name="description" content="Kwamena Koomson WDD 230 - Web Frontend Development course assignment portal">
-    <meta name="author" content="Kwamena Koomson ">
+    <meta name="author" content="Kwamena Koomson">
     <meta property="og:title" content="Kwamena Koomson - WDD 230 - Web Frontend Development" />
     <meta property="og:type" content="website"/>
-    <meta property="og:url" content="https://kwamena-koomson.github.io/wdd230/" />
+    <meta property="og:url" content="https://kwamena-koomsongithub.io/wdd230/" />
     <meta property="og:image" content="https://www.miituzaingo.gov.ar/sites/default/files/2019-10/Pque%20Leloir%20%284%29.jpg" />
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
@@ -20,11 +20,10 @@
 </head>
 <body>
     <header>
-        <img src="images/kwamena.webp" alt="Kwamena Koomson" width="100" height="100">
-    <span>Kwamena Koomson</span>
-    <div id="mode">
-      🌙
-  </div>
+        <img src="images/dark.webp" alt="dark-mode" id="darkBtn">
+        <img src="images/kwamena.webp" alt="Kwamena Koomson Profile" width="100" height="100">
+        <span>Kwamena Koomson</span>
+        <button id="menu"></button>
     </header>
     <nav>
         <ul>
@@ -59,16 +58,14 @@
             </figure>
             <p>Number of Visits: <span class="visits"></span></p>
         </section>
-        <iframe id="google-map-iframe"
-        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1985.445973107736!2d-0.11851266302556543!3d5.58298690378116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sgh!4v1710821941873!5m2!1sen!2sgh"
-         width="1200" height="400" style="border:0;" allowfullscreen="" loading="lazy" 
-         referrerpolicy="no-referrer-when-downgrade"></iframe>    </main>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.8919462790423!2d-0.12043692501464723!3d5.582986894397694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf85c6179997e9%3A0xea88a6ed3333ca1!2sKinkum%20Ventures!5e0!3m2!1sen!2sgh!4v1711533182788!5m2!1sen!2sgh" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </main>
     <footer>
-        <p>&copy;<span id="year"></span> - Kwamena Koomson  - Accra, Ghana</p>
+        <p>&copy;<span id="year"></span> - Kwamena Koomson - Accra, Ghana</p>
         <p id="lastModified"></p>
     </footer>
-    <script src="scripts/getDates.js" defer></script>
-    <script src="scripts/dark.js"></script>
-    <script src="scripts/main.js"></script>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/links.js"></script>
 </body>
 </html>
