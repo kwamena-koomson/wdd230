@@ -1,74 +1,147 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kwamena Koomson - WDD 230 - Web Frontend Development</title>
-    <meta name="description" content="Kwamena Koomson WDD 230 - Web Frontend Development course assignment portal">
-    <meta name="author" content="Kwamena Koomson ">
-    <meta property="og:title" content="Kwamena Koomson - WDD 230 - Web Frontend Development" />
-    <meta property="og:type" content="website"/>
-    <meta property="og:url" content="https://kwamena-koomson.github.io/wdd230/" />
-    <meta property="og:image" content="https://www.miituzaingo.gov.ar/sites/default/files/2019-10/Pque%20Leloir%20%284%29.jpg" />
-    <link rel="icon" href="favicon.ico">
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/larger.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Kwamena Koomson - WDD 230 - Web Frontend Development</title>
+  <meta name="description" content="Kwamena Koomson WDD 230 - Web Frontend Development course assignment portal">
+  <meta name="author" content="Kwamena Koomson">
+
+  <meta property="og:title" content="Kwamena Koomson- WDD 230 - Web Frontend Development">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://lekma.gov.gh/wp-content/uploads/2022/07/banner-ff.png">
+  <meta property="og:url" content="https://kwamena-koomson.github.io/wdd230/">
+
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/larger.css">
 </head>
+
 <body>
-    <header>
-        <img src="images/kwamena.webp" alt="Kwamena Koomson" width="100" height="100">
+  <header>
+    <img src="images/kwamena.webp" alt="Kwamena Koomson" width="100" height="100">
     <span>Kwamena Koomson</span>
     <div id="mode">
       🌙
   </div>
-    </header>
-    <nav>
+   
+  </header>
+  <nav>
+    <button id="menu" title="Menu"></button>
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="./chamber/index.html">Chamber</a></li>
+      <li><a href="/week01/chamber-site-plan.html">Site Plan</a></li>
+      <li><a href="#">Form</a></li>
+    </ul>
+  </nav>
+
+
+  <main>
+    <div class="hero">
+      <picture>
+        <source srcset="images/hero-small.webp" media="(max-width: 400px)">
+        <source srcset="images/hero-medium.webp" media="(max-width: 700px)">
+        <img src="images/hero-large.webp" alt="Hero image" width="960" height="480">
+      </picture>
+      <div class="herolabel">
+        <p>Fort Lauderdate Temple
+                  </p>
+      </div>
+    </div>
+    <h1>WDD 230: Web Frontend Development</h1>
+    <div class="cardWrapper">
+      <section class="card">
+        <h2>Learning Activities</h2>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="chamber/index.html">Chamber</a></li>
-            <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
-            <li><a href="form.html">Form</a></li>
+          <li>
+            <span>Week 01:</span>
+            <a href="/projects/project1/index.html">Layout</a>
+            <span>|</span>
+            <a href="/projects/project1/media-queries.html">Media Query</a>
+            <span>|</span>
+            <a href="https://codepen.io/Kwamena/pen/ABC123">JS Pen</a>
+          </li>
+          <li>
+            <span>Week 02: </span>
+            <a href="week02/design.html">Design</a>
+            <span>|</span>
+            <a href="https://codepen.io/kwamena-koomson/pen/vYMLerY">Hamburger</a>
+            <span>|</span>
+            <a href="week02/bom.html">BOM</a>
+          </li>
+          <li>
+            <span>Week 03: </span>
+            <span class="week-info">
+              <a href="week03/images/landscape.webp">WebP</a>
+              <span>|</span>
+              <a href="week03/lazyload.html">Lazyload</a>
+              <span>|</span>
+              <a href="week03/responsive-images.html">srcset</a>
+              <span>|</span>
+              <a href="week03/bom.html">localStorage</a>
+            </span>
+          </li>
+          <li>
+            <span>Week 04: </span>
+            <span class="week-info">
+              <a href="https://codepen.io/Kwamena-Koomson-the-decoder/pen/VwNWwJX?editors=1100">Pseudo</a>
+              <span>|</span>
+              <a href="week04/images/combinators.jpg">Combinator</a>
+              <span>|</span>
+              <a href="week04/tablebuild.html">Table</a>
+              <span>|</span>
+              <a href="week04/form.html">Form</a>
+          </li>
+          <li>
+            <span>Week 05: </span>
+            <span class="week-info">
+              <a href="https://codepen.io/kwamena-koomson/pen/KKYqXWX?editors=1100">CSS Pseudo-elements |
+              </a>
+              <span>|</span>
+              <a href="week05/scripts/new-ward-members.json">JSON </a>
+              <span>|</span>
+              <a href="week05/prophets.html">Fetch API</a>
+              <span>|</span>
+              <a href="week05/weather.html">Weather API</a>
+          </li>
+          <li><span>Week 06: </span></li>
         </ul>
-    </nav>
-    <main>
-        <div class="hero">
-            <picture>
-              <source srcset="images/hero-small.webp" media="(max-width: 400px)">
-              <source srcset="images/hero-medium.webp" media="(max-width: 960px)">
-              <img src="images/hero-large.webp" alt="table setting" width="1500" height="750">
-            </picture>
-            <div class="herolabel">
-                <p>Fort Lauderdate Temple</p>
-            </div>
-        </div>
-        <h1>WDD 230: Web Frontend Development</h1>
-        <section class="card">
-            <h2>Learning Activities</h2>
-            <ul class="weeks">
-            </ul>
-        </section>
-        <section class="card">
-            <h2>Information</h2>
-            <figure>
-                <img src="" alt="" id="weather-icon">
-                <figcaption><span id="current-temp"></span></figcaption>
-            </figure>
-            <p>Number of Visits: <span class="visits"></span></p>
-        </section>
-        <iframe id="google-map-iframe"
-        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1985.445973107736!2d-0.11851266302556543!3d5.58298690378116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sgh!4v1710821941873!5m2!1sen!2sgh"
-         width="1200" height="400" style="border:0;" allowfullscreen="" loading="lazy" 
-         referrerpolicy="no-referrer-when-downgrade"></iframe>    </main>
-    <footer>
-        <p>&copy;<span id="year"></span> - Kwamena Koomson  - Accra, Ghana</p>
-        <p id="lastModified"></p>
-    </footer>
-    <script src="scripts/getDates.js" defer></script>
-    <script src="scripts/dark.js"></script>
-    <script src="scripts/main.js"></script>
+      </section>
+      <section class="card information">
+        <h2>Information</h2>
+        <ul>
+          <li>Location: Accra, Ghana</li>
+          <li>Weather: +15°C, Sunny</li>
+          <li>Page Visits: 105</li>
+        </ul>
+      </section>
+    </div>
+    
+    <iframe id="google-map-iframe"
+    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1985.445973107736!2d-0.11851266302556543!3d5.58298690378116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sgh!4v1710821941873!5m2!1sen!2sgh"
+     width="1200" height="400" style="border:0;" allowfullscreen="" loading="lazy" 
+     referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </main>
+
+  <footer>
+    <p>
+      <span>&copy;<span id="jsYear"></span></span>
+      <span>Kwamena Koomson</span>
+      <span>Accra, Ghana</span>
+    </p>
+    <p id="lastModified"></p>
+  </footer>
+  
+  <script src="scripts/getDates.js" defer></script>
+  <script src="scripts/dark.js"></script>
 </body>
+
 </html>
