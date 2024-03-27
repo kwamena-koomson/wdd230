@@ -1,4 +1,4 @@
-const linksURL = 'https://mscopa.github.io/wdd230/data/links.json';
+const linksURL = 'https://kwamena-koomson.github.io/wdd230/data/links.json';
 
 
 async function getLinks() {
