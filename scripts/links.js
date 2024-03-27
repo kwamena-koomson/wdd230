@@ -1,43 +1,36 @@
-const baseURL = "https://kwamena-koomson.github.io/wdd230/";
-const linksURL = "https://kwamena-koomson.github.io/wdd230/data/links.json";
+const linksURL = 'https://mscopa.github.io/wdd230/data/links.json';
+
 
 async function getLinks() {
-  const response = await fetch(linksURL);
-  const data = await response.json();
-  displayLinks(data.lessons);
-}
-
-function displayLinks(weeks) {
-  const linksContainer = document.getElementById('links-container');
-
-  const section = document.createElement('section');
-  section.classList.add('card');
-
-  const h3 = document.createElement('h3');
-  h3.setAttribute('data-type', 'activities');
-  h3.textContent = 'Learning Activities';
-  section.appendChild(h3);
-
-  weeks.forEach(week => {
-    const weekNumber = week.lesson;
-    const p = document.createElement('p');
-    const linksText = [];
-
-    linksText.push(`${weekNumber}: `);
-
-    week.links.forEach((link, index) => {
-      const linkText = `<a href="${link.url}">${link.title}</a>`;
-      if (index > 0) {
-        linksText.push(' | ');
-      }
-      linksText.push(linkText);
-    });
-
-    p.innerHTML = linksText.join('');
-    section.appendChild(p);
-  });
-
-  linksContainer.appendChild(section);
+    try {
+        const response = await fetch(linksURL);
+        if (response.ok) {
+            const data = await response.json();
+            displayLinks(data);
+        }
+        else {
+            throw Error(await response.text());
+        }
+    } catch (error) {
+        console.log(error);
+    }
 }
 
 getLinks();
+
+function displayLinks(weeks) {
+    const weeksList = document.querySelector('.weeks');
+    
+    weeks.weeks.forEach(link => {
+        let li = document.createElement('li');
+        li.textContent = `${link.week}: `;
+        for (let i = 0; i < link.links.length; i++) {
+            const a = document.createElement('a');
+            a.textContent = link.links[i].title;
+            a.href = link.links[i].url;
+            li.appendChild(a);
+            li.appendChild(document.createTextNode(' | '));
+        }
+        weeksList.appendChild(li);
+    })
+}
