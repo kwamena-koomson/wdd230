@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     let isGridView = true;
 
-    const membersData = fetch('https://guidarmike.github.io/wdd230/chamber/data/members.json')
+    const membersData = fetch('https://kwamena-koomson.github.io/wdd230/chamber/data/members.json')
         .then(response => response.json())
         .then(data => {
             displayMembers(data.members);
