@@ -5,72 +5,63 @@
         "address": "JRC7+9R8 335 Place, Accra",
         "phoneNumber": "(233)30-296-2023",
         "websiteURL":"https://www.rigworldgroup.com",
-        "image": "images/rigworld.webp",
+        "image": "rigworld.webp",
         "membershipLevel": "Bronze",
-        "other_info": "Trusting Oil Farming Company since 2014."
+        "other_info": "Trusting Oil Farming Company since 2010."
       },
       {
         "name": "Calbank",
             "address": " 23 Independence Ave, Accra",
             "phoneNumber": "(233)30-268-0059",
             "websiteURL":"https://calbank.net/",
-            "image": "images/calbank.webp",
+            "image": "calbank.webp",
             "membershipLevel": "Gold",
-            "other_info": "Regional Nature Preservation Association."
+            "other_info": "Best bank in Accra"
       },
       {
         "name": "Newmont",
             "address": "8th Floor, Standard Chartered Bank (SCB), Head Office Building, 87 Independence Avenue, Liberation Rd, Accra",
             "phoneNumber": "(233)23-700-0001",
             "websiteURL":"https://newmont.com/",
-            "image": "images/newmont.webp",
+            "image": "newmont.webp",
             "membershipLevel": "NP",
-            "other_info": "Regional Distribution Association for Olive Oli."
+            "other_info": "Regional mining company"
     },
     {
         "name": "MTN Ghana",
         "address": "25 Independence Ave, Accra",
         "phoneNumber": "(233)24-430-0000",
         "websiteURL":"https://mtn.com.gh/",
-        "image": "images/mtn.webp",
+        "image": "mtn.webp",
         "membershipLevel": "Silver",
-        "other_info": "Culinary school of Sabina."
+        "other_info": "Best telecommunication company."
     },
     {
         "name": "Kosmos Energy Ghana",
         "address": "12 1st Osu Badu St, West",
         "phoneNumber": "(233)30-274-0888",
         "websiteURL":"https://www.kosmosenergy.com/ghana/",
-        "image": "images/kosmos.webp",
+        "image": "kosmos.webp",
         "membershipLevel": "Silver",
-        "other_info": "Private Association of Olive Oil Farming."
+        "other_info": "Most trusted energy conversion company"
     },
     {
         "name": "Enterprise Trustees Limited",
         "address": "House No. 11, 5Th Floor Enterprise, J.E Prof.Atta Mills High St, Accra",
         "phoneNumber": "(233)30-263-4704",
         "websiteURL":"https://myenterprisegroup.io/gh-trustees/",
-        "image": "images/enterprise.webp",
+        "image": "enterprise.webp",
         "membershipLevel": "Silver",
-        "other_info": "Public Association of Olive Oil Farming."
+        "other_info": "Best insurance company"
     },
     {
         "name": "AngloGold Ashanti",
         "address": "58C5+V5C, New, Obuasi",
         "phoneNumber": "(233)54-112-0695",
         "websiteURL":"https://www.anglogoldashanti.com/",
-        "image": "images/anglogold.webp",
+        "image": "anglogold.webp",
         "membershipLevel": "NP",
-      "other_info": "Trusting Oil Farming Company since 1984."
-    },
-    {
-      "name": "Anonymous Olive Oil Drinkers",
-      "address": "963 Walnut Avenue",
-      "phone": "555-2021",
-      "website": "http://www.livinghappily.com",
-      "image": "company.webp",
-      "membership_level": "Silver",
-      "other_info": "Elderly Association for Cultural activities."
+      "other_info": "Trusting Oil Farming Company since 1991."
     }
     ]
 }
